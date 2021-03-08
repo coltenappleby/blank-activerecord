@@ -3,12 +3,12 @@ require_relative '../app/models/customer.rb'
 
 
 cust1 = Customer.create({:name =>"Andre", :balance => 1000000000})
-# cust2 = Customer.new("Menachem", 100)
-# cust3 = Customer.new("Colten", 10)
+cust2 = Customer.create({:name =>"Menachem", :balance => 4000000000})
+cust3 = Customer.create({:name =>"Colten", :balance => 6000000000})
 
-merch1 = Merchant.new("NBA Top Shop", 100)
-merch2 = Merchant.new("Pokemon", 1000)
-merch3 = Merchant.new("M+M", 1001)
+merch1 = Merchant.create({:name =>"Wine Shop", :balance => 680000})
+merch2 = Merchant.create({:name =>"Bakery", :balance => 680000})
+merch3 = Merchant.create({:name =>"Laundry", :balance => 680000})
 
 puts merch1.id
 
