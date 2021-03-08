@@ -1,4 +1,4 @@
 class Transaction < ActiveRecord::Base
-    has_many :merchants
-    has_many :customers
+    belongs_to :merchants
+    belongs_to :customers
 end

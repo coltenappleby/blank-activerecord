@@ -10,8 +10,6 @@ merch1 = Merchant.create({:name =>"Wine Shop", :balance => 680000})
 merch2 = Merchant.create({:name =>"Bakery", :balance => 680000})
 merch3 = Merchant.create({:name =>"Laundry", :balance => 680000})
 
-puts merch1.id
-
 trans1 = Transaction.create({customer_id: cust1.id, merchant_id: merch1.id})
 trans2 = Transaction.create({customer_id: cust1.id, merchant_id: merch2.id}) 
 trans3 = Transaction.create({customer_id: cust2.id, merchant_id: merch1.id}) 

@@ -10,7 +10,7 @@ class Customer < ActiveRecord::Base
     end
 
     def my_transactions
-        Transaction.all.select { |t| t.customer_id = self.id}
+        Transaction.all.where(customer_id: self.id)
     end
 
     
